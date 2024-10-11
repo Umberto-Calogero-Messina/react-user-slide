@@ -9,16 +9,14 @@ const App = () => {
 
   return (
     <>
-      {user && (
-        <Card
-          key={user.userId}
-          title={user.title}
-          name={user.name}
-          username={user.username}
-          email={user.email}
-          profileImage={user.profileImage}
-        />
-      )}
+      <Card
+        key={user.userId}
+        title={user.title}
+        name={user.name}
+        username={user.username}
+        email={user.email}
+        profileImage={user.profileImage}
+      />
       <SliderState index={index} setIndex={setIndex} />
     </>
   );
